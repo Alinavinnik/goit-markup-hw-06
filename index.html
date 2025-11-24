@@ -128,7 +128,6 @@
       <!-- #endregion features -->
 
       <!-- #region our team -->
-
       <section class="section-team">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
@@ -321,19 +320,44 @@
         </div>
       </section>
       <!-- #endregion our team -->
+
       <!-- #region portfolio -->
-      <!-- <section class="section-portfolio">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="title-portfolio">Our Portfolio</h2>
           <ul class="list-portfolio">
+            <img src="./images/portfolio/Banking-desktop@2x.jpg" />
             <li class="item-portfolio">
               <div class="img-portfolio">
-                <img
-                  src="./images/portfolio/banking.jpg"
-                  alt="Banking app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/portfolio/banking.jpg            1x,
+                      ./images/portfolio/Banking-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/portfolio/Banking-tablet.jpg    1x,
+                      ./images/portfolio/Banking-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/portfolio/Banking-mobi.jpg    1x,
+                      ./images/portfolio/Banking-mobi@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio/banking.jpg"
+                    alt="Banking app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -442,7 +466,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion portfolio -->
     </main>
     <!-- #region footer -->

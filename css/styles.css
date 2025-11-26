@@ -429,6 +429,8 @@ body {
   background-color: #f4f4fd;
   padding: 96px 0;
 }
+.our-team {
+}
 @media screen and (min-width: 768px) {
   .section-team {
     padding: 120px 0;
@@ -1036,3 +1038,58 @@ body {
   pointer-events: auto;
 }
 /* #endregion popup */
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  height: 100%;
+}
+.mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobile-menu-nav {
+  margin-bottom: auto;
+}
+.list-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.link-mobile-nav {
+}
+.list-mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.mobile-social-list {
+  display: flex;
+  gap: 40px;
+}
+.mobile-sosial-link {
+  display: flex;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
